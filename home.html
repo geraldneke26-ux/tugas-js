@@ -1,0 +1,55 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Tugas 4 - JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header: ganti dengan nama, nim, dan foto kamu -->
+  <div id="header">
+    <img src="foto.jpeg" alt="Foto" width="80" height="50">
+    <div>
+      <h2>GERALD STEVEN NEKE</h2>
+      <p>NIM: 255314043</p>
+    </div>
+  </div>
+
+  <div id="isi">
+
+    <!-- Bagian 1: nama dan jumlah pilihan -->
+    <div id="bagian1">
+      <p>Nama : <input type="text" id="nama"></p>
+      <p>Jumlah Pilihan : <input type="number" id="jumlah"></p>
+      <button onclick="ok1()">OK</button>
+    </div>
+
+    <!-- Bagian 2: teks pilihan (dibuat oleh JavaScript) -->
+    <div id="bagian2">
+      <div id="tempatPilihan"></div>
+      <button onclick="ok2()">OK</button>
+    </div>
+
+    <!-- Bagian 3: pilih salah satu (radio button) -->
+    <div id="bagian3">
+      <p>Pilihan :</p>
+      <div id="tempatRadio"></div>
+      <button onclick="ok3()">OK</button>
+    </div>
+
+    <!-- Bagian 4: email -->
+    <div id="bagian4">
+      <p>Email : <input type="text" id="email" placeholder="email@domain.com"></p>
+      <button onclick="ok4()">OK</button>
+    </div>
+
+    <!-- Bagian 5: hasil -->
+    <div id="bagian5">
+      <p id="hasil"></p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
